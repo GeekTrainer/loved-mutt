@@ -9,7 +9,11 @@
             "redirect": "/.auth/logout"
         },
         {
-            "route": "/",
+            "route": "/favorites",
+            "allowedRoles": ["authenticated"]
+        },
+        {
+            "route": "/api/favorites",
             "allowedRoles": ["authenticated"]
         }
     ],
