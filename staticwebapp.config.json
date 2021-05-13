@@ -1,0 +1,26 @@
+{
+    "routes": [
+        {
+            "route": "/login",
+            "rewrite": "/.auth/login/github"
+        },
+        {
+            "route": "/logout",
+            "redirect": "/.auth/logout"
+        },
+        {
+            "route": "/favorites",
+            "allowedRoles": ["authenticated"]
+        },
+        {
+            "route": "/api/favorites",
+            "allowedRoles": ["authenticated"]
+        }
+    ],
+    "responseOverrides": {
+        "401": {
+          "statusCode": 302,
+          "redirect": "/login"
+        }
+    }
+}
