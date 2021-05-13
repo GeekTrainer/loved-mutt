@@ -1,0 +1,8 @@
+{
+    "routes": [
+        {
+            "route": "/api/login",
+            "rewrite": "/.auth/login/github"
+        }
+    ]
+}
