@@ -12,5 +12,11 @@
             "route": "/",
             "allowedRoles": ["authenticated"]
         }
-    ]
+    ],
+    "responseOverrides": {
+        "401": {
+          "statusCode": 302,
+          "redirect": "/login"
+        }
+    }
 }
