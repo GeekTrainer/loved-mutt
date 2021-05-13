@@ -3,6 +3,14 @@
         {
             "route": "/login",
             "rewrite": "/.auth/login/github"
+        },
+        {
+            "route": "/logout",
+            "redirect": "/.auth/logout"
+        },
+        {
+            "route": "/",
+            "allowedRoles": ["authenticated"]
         }
     ]
 }
