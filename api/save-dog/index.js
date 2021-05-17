@@ -5,10 +5,11 @@ module.exports = async function (context, req) {
     try {
         await client.connect();
         const database = client.db('loved-mutt');
-        const collection = database.collection('favorites');
+        const collection = database.collection('dogs');
         const doc = {
             imageUrl: req.body.imageUrl,
             dogType: req.body.dogType,
+            name: req.body.name,
             userId: getUserId(req)
         };
         const result = await collection.insertOne(doc);

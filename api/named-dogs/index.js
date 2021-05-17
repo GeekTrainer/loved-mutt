@@ -7,9 +7,9 @@ module.exports = async function (context, req) {
     try {
         client.connect();
         const database = client.db('loved-mutt');
-        const collection = database.collection('favorites');
-        const favorites = await collection.find({userId}).toArray();
-        context.res.body = {favorites};
+        const collection = database.collection('dogs');
+        const namedDogs = await collection.find({userId}).toArray();
+        context.res.body = {namedDogs};
     } catch (ex) {
         context.res = {
             body: ex,

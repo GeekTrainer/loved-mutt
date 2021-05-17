@@ -1,43 +1,48 @@
 <script>
     let imageUrl = '';
     let dogType = '';
-    let message = 'If the dog is for you, let us know!';
+    let message = '';
+    let name = '';
 
-    import { onMount } from 'svelte';
+    import { onMount } from "svelte";
 
     // Load first dog for display
     onMount(loadDog);
 
     async function loadDog() {
-        const result = await fetch('https://dog.ceo/api/breeds/image/random/1/alt');
+        const result = await fetch(
+            "https://dog.ceo/api/breeds/image/random/1/alt"
+        );
         const imageInfo = (await result.json()).message[0];
         imageUrl = imageInfo.url;
-        dogType = imageInfo.altText.substring(0, imageInfo.altText.lastIndexOf(' '));
+        dogType = imageInfo.altText;
+        if (dogType.endsWith("dog dog")) // removes dog dog
+            dogType = imageInfo.altText.substring(
+                0, imageInfo.altText.lastIndexOf(" ")
+            );
     }
 
-    async function saveFavoriteDog() {
-        const result = await fetch(
-            '/api/save-dog',
-            {
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                method: 'POST',
-                body: JSON.stringify({imageUrl, dogType})
-            }
-        );
+    async function nameDog() {
+        const result = await fetch("/api/save-dog", {
+            headers: {
+                "Content-Type": "application/json",
+            },
+            method: "POST",
+            body: JSON.stringify({ imageUrl, dogType, name }),
+        });
         const json = await result.json();
-        message = `${dogType} saved as favorite!`;
+        message = `Saved ${dogType} as ${name}`;
+        name = '';
         await loadDog();
     }
 
     async function nextDog() {
-        message = 'They\'re all good dogs';
+        message = "They're all good dogs";
         await loadDog();
     }
 
     async function getUserInfo() {
-        const response = await fetch('/.auth/me');
+        const response = await fetch("/.auth/me");
         const payload = await response.json();
         if (payload.clientPrincipal) {
             // user is authenticated
@@ -53,38 +58,54 @@
     <title>Dog shelter sample site</title>
 </svelte:head>
 <article class="index">
-    <h2>Identify your favorite dogs!</h2>
+    <h2>Name dogs!</h2>
     <p>
-        This is a sample site where you can flip through pictures of dogs to identify which ones you love best!
+        One way families can begin to get excited about adopting a dog is to
+        begin thinking of possible names. After logging in, you can come up with
+        names you think would work! Later on, you can <a href="named-dogs"
+            >review the list</a
+        > of names you came up with.
     </p>
 
-    <div class="message">{message}</div>
+    {#if message}
+        <div class="message">{message}</div>
+    {/if}
+
     {#await getUserInfo()}
         Getting user info...
     {:then username}
         {#if username}
-        <div class="center">Welcome, {username}! See your <a href="favorites">favorites</a>!</div>
-        <div class="vote-button-container center">
-            <button class="vote-button" on:click={saveFavoriteDog}>
-                <span class="fas fa-vote-yea fa-4x icon"></span>
-                Save as favorite!
-            </button>
-            <button class="vote-button" on:click={nextDog}>
-                <span class="fas fa-forward fa-4x icon"></span>
-                Cute dog! But but best for someone else.
-            </button>
-        </div>
+            <div class="center">
+                Welcome, {username}! See your
+                <a href="named-dogs">named dogs</a>!
+            </div>
+
+            <div class="header center">
+                What would you call this cute {dogType}?
+            </div>
+
+            <div class="vote-button-container center">
+                <input class="name-input" type="text" bind:value={name} />
+                <button class="vote-button" on:click={nameDog}>
+                    <span class="fas fa-vote-yea icon" />
+                    Save name!
+                </button>
+                <button class="vote-button" on:click={nextDog}>
+                    <span class="fas fa-forward icon" />
+                    Cute dog! But but best for someone else.
+                </button>
+            </div>
         {:else}
-        <a href="/.auth/login/github">Login to save dogs as favorites!</a>
+            <div class="center">
+                <a href="/.auth/login/github" class="center">Login to name the dogs!</a>
+            </div>
+            <div class="header center">
+                Isn't this a cute {dogType}?
+            </div>
         {/if}
     {/await}
     <div>
-        <div class="header center">
-            How about the {dogType}?
-        </div>
-        <div>
-            <img src={imageUrl} alt={dogType} />
-        </div>
+        <img src={imageUrl} alt={dogType} />
     </div>
 </article>
 
@@ -93,12 +114,6 @@
         width: 90%;
         margin: auto;
     }
-    /* .saved {
-
-    }
-    .skipped {
-
-    } */
     .message {
         border-radius: 5px;
         border-style: solid;
@@ -114,11 +129,9 @@
         margin-bottom: 4px;
     }
     .vote-button {
-        width: 150px;
         text-align: center;
-        height: 175px;
         font-weight: bold;
-        display:flexbox;
+        display: flexbox;
         vertical-align: top;
         margin-bottom: 10px;
     }
@@ -131,5 +144,9 @@
     }
     .center {
         text-align: center;
+        vertical-align: middle;
+    }
+    .name-input {
+        font-size: 1.8em;
     }
 </style>
