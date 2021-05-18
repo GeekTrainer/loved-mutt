@@ -12,6 +12,6 @@ export default {
 		files: {
 			assets: 'static'
 		},
-		router: true,
+		router: false,
 	}
 };
