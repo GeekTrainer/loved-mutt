@@ -12,7 +12,6 @@ export default {
 		files: {
 			assets: 'static'
 		},
-		router: false,
-		// ssr: false
+		router: true,
 	}
 };
