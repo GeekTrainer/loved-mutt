@@ -42,13 +42,17 @@
     }
 
     async function getUserInfo() {
+        // retrieve the current user from Azure Static Web Apps
         const response = await fetch("/.auth/me");
+        // get the JSON
         const payload = await response.json();
+        // clientPrincipal is the property with the information
         if (payload.clientPrincipal) {
             // user is authenticated
+            // userDetails contains the username
             return payload.clientPrincipal.userDetails;
         } else {
-            // anonymous
+            // if clientPrincipal is null, the session is anonymous
             return null;
         }
     }
