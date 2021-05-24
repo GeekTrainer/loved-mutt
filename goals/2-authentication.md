@@ -95,3 +95,7 @@ Your team might find these resources helpful:
 After enabling authentication and logging in via GitHub, the page should look like this:
 
 ![Screenshot of the starting page, showing a textbox where you can name the dog, and the header What would you call this cute Pyrenees dog?](./media/authentication.png)
+
+## Next challenge
+
+Once your team has configured authentication and authorization, you can [add a database](./3-database.md).

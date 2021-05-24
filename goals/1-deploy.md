@@ -44,3 +44,7 @@ Your team might find these resources helpful:
 After you deploy and navigate to the site, you should see a page which looks like the following:
 
 ![Screenshot of the starting page, showing a link to login, a picture of a dog with the heading Isn't this a cute Pekinese dog?](./media/starter-page.png)
+
+## Next challenge
+
+Once you've deployed your application, it's time to [add authentication](./2-authentication.md).

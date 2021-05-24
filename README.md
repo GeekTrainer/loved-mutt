@@ -39,6 +39,7 @@ Your team will obtain the starter, deploy the application to the cloud, enable a
 1. [Run the application locally](./goals/0-run-locally.md)
 1. [Deploy to the cloud](./goals/1-deploy.md)
 1. [Enable authentication](./goals/2-authentication.md)
+1. [Add a database](./goals/3-database.md)
 
 ## Where do we go from here?
 
