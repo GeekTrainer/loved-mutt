@@ -26,6 +26,8 @@ getMongoClient() {
 
 `getMongoClient` contains the code to connect to the database. Notice `process.env.MONGO_CONNECTION_STRING`, which is using [process.env](https://nodejs.org/dist/latest-v14.x/docs/api/process.html#process_process_env) to read an environment variable. After creating the database on Azure, your team will need to ensure the environment variable is set correctly on the static web app in Azure.
 
+When creating your team's instance of Cosmos DB, use the Serverless option. This will allow you to pay for usage rather than a fix fee. For this sample application, the costs will be extremely cheap (under $1 US). Fortunately, since you will be using [Azure for Students](https://aka.ms/a4s), you have free credit!
+
 ## Success criteria
 
 Your team will create the necessary resources and make the necessary updates in Azure to enable the application to access a Cosmos DB database. Your team will have achieved this goal when the following success criteria are met:
