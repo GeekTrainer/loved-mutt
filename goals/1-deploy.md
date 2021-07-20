@@ -23,7 +23,7 @@ Your team will work together to deploy the application to Azure using Azure Stat
 
 ## Validation
 
-To validate your lab with the automated tool, enter the newly created URL on Azure Static Web Apps into the tool...
+To validate your lab with the automated tool, enter the newly created URL on Azure Static Web Apps into the tool.
 
 ## Resources
 
