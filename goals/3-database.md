@@ -8,7 +8,7 @@ Similarly, almost every web application will need some form of a database. If yo
 
 [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction) is a document or [NoSQL](https://en.wikipedia.org/wiki/NoSQL) database service. Cosmos DB provides different APIs you can use to access it, including an [API for MongoDB](https://docs.microsoft.com/azure/cosmos-db/introduction), which allows the Node.js MongoDB client to interact with it. Most recently, [Cosmos DB serverless](https://docs.microsoft.com/azure/cosmos-db/serverless) was released, which similar to other serverless products charges are based on usage. Your team will create a Cosmos DB account and configure the application to use your new Cosmos DB deployment.
 
-## Key files
+## Application notes
 
 Open */api/helpers.js*. This file contains a couple of functions to aid the development of the server-side portion of this project. The key function is `getMongoClient`.
 

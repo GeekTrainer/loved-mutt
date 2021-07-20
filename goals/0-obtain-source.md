@@ -6,7 +6,7 @@ Whenever working on any project, step 0 is typically to fork and clone the repos
 
 The front-end was created using [Svelte](https://svelte.dev) and [SvelteKit](https://kit.svelte.dev). No experience with Svelte is required; the only front-end code your team will need to write will be JavaScript, and a comment has been placed where the code should go.
 
-The back-end uses [Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview), the Azure serverless platform. Azure Functions are supported natively by Azure Static Web Apps, which is where your team will deploy the application. As your team gets to each goal, the key files you need to use will be highlighted.
+The back-end uses [Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview), the Azure serverless platform. Azure Functions are supported natively by Azure Static Web Apps, which is where your team will deploy the application. As your team gets to each goal, relevant notes about the application will be provided.
 
 > Note: Your team does not have to run the application locally to complete this workshop. If you wish to configure your system for local development, [setup steps have been provided](./4-optional-run-locally).
 
