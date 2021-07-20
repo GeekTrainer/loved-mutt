@@ -27,6 +27,11 @@ Each member of your team will also need the following software installed:
 - [Node.js](https://nodejs.org/)
   - [Install Node.js on Windows](https://docs.microsoft.com/windows/dev-environment/javascript/nodejs-on-windows)
   - [Install Node.js on Linux or MacOS](https://github.com/nvm-sh/nvm#installing-and-updating)
+- [Azure Functions Core Tools](https://www.npmjs.com/package/azure-functions-core-tools), which can be installed by running the following command (after Node.js and npm are installed)
+
+  ```bash
+  npm i -g azure-functions-core-tools@3 --unsafe-perm true
+  ```
 
 ## Resources
 
@@ -36,7 +41,7 @@ A series of resources will be provided to help your team determine the appropria
 
 Your team will obtain the starter, deploy the application to the cloud, enable authentication, and create and configure the database.
 
-1. [Run the application locally](./goals/0-run-locally.md)
+1. [Obtain the source code](./goals/0-obtain-source.md)
 1. [Deploy to the cloud](./goals/1-deploy.md)
 1. [Enable authentication](./goals/2-authentication.md)
 1. [Add a database](./goals/3-database.md)
