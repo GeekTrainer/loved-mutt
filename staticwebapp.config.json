@@ -6,17 +6,21 @@
         },
         {
             "route": "/named-dogs",
-            "allowedRoles": ["authenticated"]
+            "allowedRoles": [
+                "authenticated"
+            ]
         },
         {
             "route": "/api/named-dogs",
-            "allowedRoles": ["authenticated"]
+            "allowedRoles": [
+                "authenticated"
+            ]
         }
     ],
     "responseOverrides": {
         "401": {
-          "statusCode": 302,
-          "redirect": "/login"
+            "statusCode": 302,
+            "redirect": "/login"
         }
     }
 }
