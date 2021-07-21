@@ -37,6 +37,8 @@ Each member of your team will also need the following software installed:
 
 A series of resources will be provided to help your team determine the appropriate steps for completion. The resources provided should provide your team with enough information to achieve each goal. If you get stuck, you can always ask a mentor for additional help.
 
+A [sample of the site](https://calm-glacier-0b7804d10.azurestaticapps.net/) has been deployed so you can see how it looks in action.
+
 ## Exploring the source code
 
 There are two key folders for the application: [src/routes](../src/routes), which contains the Svelte files used for the front-end, and [api](../api), which contains the Azure Functions used for the back-end. The flow of the application is as follows:

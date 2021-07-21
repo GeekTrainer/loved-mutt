@@ -23,6 +23,7 @@
     }
 
     async function nameDog() {
+        message = 'Saving dog...';
         const result = await fetch("/api/save-dog", {
             headers: {
                 "Content-Type": "application/json",
