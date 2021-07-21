@@ -50,6 +50,8 @@ There are two key folders for the application: [src/routes](../src/routes), whic
 
 > **Note**: No updates to the application code will be made during this workshop. Your team will be able to successfully complete the workshop without any experience with Svelte. The only file your team will modify is *staticwebapp.config.json*.
 
+![Flow of the app](./goals/media/app-flow.svg)
+
 ## Goals
 
 Your team will obtain the starter, deploy the application to the cloud, enable authentication, and create and configure the database.
