@@ -64,7 +64,7 @@ Notice the link to */login*. This will become **the key to this goal**. Your tea
 
 Your team will make the necessary updates to the application to enable authentication. Your team will have achieved this goal when the following success criteria are met:
 
-- The necessary updates have been applied to enable GitHub authentication via the path */login*
+- The necessary updates have been applied to enable GitHub authentication via the path **/login**
 - After the updated site is deployed, a user can complete the following flow:
   - Navigate to the index page
   - Select the *Login to name the dogs!* link
@@ -73,7 +73,7 @@ Your team will make the necessary updates to the application to enable authentic
 
 ## Validation
 
-To validate your lab with the automated tool, enter the contents of *staticwebapp.config.json* into the tool...
+To validate your lab with the automated tool, enter the contents of *staticwebapp.config.json* into the [validation tool](https://ashy-mushroom-0609d7c10.azurestaticapps.net/).
 
 ## Resources resources
 

@@ -1,6 +1,6 @@
 # Goal 1: Deploy to the cloud
 
-The Loved Mutt application is a full-stack application (or sometimes called a static web app). All the necessary code for both the client and server are contained inside one project, and the client uses a framework (Svelte in this case). This is a standard way to do web development. The application also requires access to a database which uses Mongo DB APIs, and the ability to enable authentication.
+The Loved Mutt application is a full-stack application (or sometimes called a static web app). All the necessary code for both the client and server are contained inside one project, and the client uses a framework (Svelte in this case). The application also requires access to a database which uses Mongo DB APIs, and the ability to enable authentication.
 
 For this goal, your team will deploy the application to Azure. Future goals will focus on authentication and the database.
 
@@ -29,7 +29,7 @@ Your team will work together to deploy the application to Azure using Azure Stat
 
 ## Validation
 
-To validate your lab with the automated tool, enter the newly created URL on Azure Static Web Apps into the tool.
+To validate your team's work with the [automated tool](https://ashy-mushroom-0609d7c10.azurestaticapps.net/), enter the newly created URL on Azure Static Web Apps into the tool.
 
 ## Resources
 

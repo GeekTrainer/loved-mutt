@@ -14,11 +14,11 @@ The back-end uses [Azure Functions](https://docs.microsoft.com/azure/azure-funct
 
 The starter repository (or repo) has been created as a [GitHub template](https://docs.github.com/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/creating-a-repository-from-a-template). One member of your team will generate a repository from this template, while the remaining team members will fork it. All team members will clone the repository locally.
 
-1. One team member: [generate the repository](https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Fgeektrainer%2Floved-mutt%2Fgenerate). You can give the repository whatever name you like.
+1. One team member: [generate the repository](https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Fgeektrainer%2Floved-mutt%2Fgenerate) by using the template. Your team can give the repository whatever name you like.
 1. All other team members will [fork](https://docs.github.com/github/getting-started-with-github/quickstart/fork-a-repo) the new repository.
 1. All team members will [clone the repository](https://docs.github.com/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository), which can be accomplished by running the following command.
 1. For all team members, after cloning the repository, open the local folder in Visual Studio Code
 
 ## Congratulations
 
-Your team has successfully obtained the starter code! Now it's time to [deploy the project to the cloud](1-deploy.md).
+Your team has successfully obtained the starter code and explored the app! Now it's time to [deploy the project to the cloud](1-deploy.md).

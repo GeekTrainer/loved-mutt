@@ -37,14 +37,33 @@ Each member of your team will also need the following software installed:
 
 A series of resources will be provided to help your team determine the appropriate steps for completion. The resources provided should provide your team with enough information to achieve each goal. If you get stuck, you can always ask a mentor for additional help.
 
+## Exploring the source code
+
+There are two key folders for the application: [src/routes](../src/routes), which contains the Svelte files used for the front-end, and [api](../api), which contains the Azure Functions used for the back-end. The flow of the application is as follows:
+
+1. A user navigates to the page and is presented with the option to login (and sees a picture of a cute dog)
+1. User authenticates using their GitHub credentials
+1. After authenticating, the user can now name dogs. Each time they name a dog, it's saved to a Mongo API database.
+1. The user can click on the "named dogs" link to review the list of dogs they've named
+
+> **Note**: No updates to the application code will be made during this workshop. Your team will be able to successfully complete the workshop without any experience with Svelte. The only file your team will modify is *staticwebapp.config.json*.
+
 ## Goals
 
 Your team will obtain the starter, deploy the application to the cloud, enable authentication, and create and configure the database.
 
-1. [Obtain the source code](./goals/0-obtain-source.md)
-1. [Deploy to the cloud](./goals/1-deploy.md)
-1. [Enable authentication](./goals/2-authentication.md)
-1. [Add a database](./goals/3-database.md)
+1. [Obtain the source code](./goals/0-obtain-source.md):
+   The first step when working with any codebase is to download it. Your team's first goal will be to obtain the code from GitHub.
+1. [Deploy to the cloud](./goals/1-deploy.md):
+   Because the Loved Mutt wants the application to be publicly available, your team will need to deploy the application. For this workshop, your team will use Azure Static Web Apps, which is able to host the application and run the Azure Functions.
+1. [Enable authentication](./goals/2-authentication.md):
+   A key component of the app is allowing users to name dogs and have the names saved to a list. This requires authentication, which is built-in to Azure Static Web Apps. To achieve this goal, your team will configure the application so *only* GitHub authentication is enabled.
+1. [Add a database](./goals/3-database.md):
+   Saving information typically requires a database, and this application is no different. The code has already been added to use a Mongo API database, which is available through Cosmos DB on Azure. Your team will create a Cosmos DB account, and then update the application on Azure Static Web Apps to use your newly created database.
+
+## Validation
+
+This workshop is designed to be a goal-oriented self-exploration of Azure and related technologies. Your team can use the [validation tool](https://ashy-mushroom-0609d7c10.azurestaticapps.net/) to confirm the *Deploy to the cloud* and *Enable authentication* goals have been met. Validating the final goal of *Add a database* will be manual - you'll use the application your team deployed and confirm it works as expected.
 
 ## Where do we go from here?
 
