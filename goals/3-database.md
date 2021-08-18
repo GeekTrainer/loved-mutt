@@ -6,7 +6,7 @@ Similarly, almost every web application will need some form of a database. If yo
 
 ## The Azure Service
 
-[Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction) is a document or [NoSQL](https://en.wikipedia.org/wiki/NoSQL) database service. Cosmos DB provides different APIs you can use to access it, including an [API for MongoDB](https://docs.microsoft.com/azure/cosmos-db/introduction), which allows the Node.js MongoDB client to interact with it. Most recently, [Cosmos DB serverless](https://docs.microsoft.com/azure/cosmos-db/serverless) was released, which similar to other serverless products charges are based on usage. Your team will create a Cosmos DB account and configure the application to use your new Cosmos DB deployment.
+[Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction?WT.mc_id=academic-28005-chrhar) is a document or [NoSQL](https://en.wikipedia.org/wiki/NoSQL) database service. Cosmos DB provides different APIs you can use to access it, including an [API for MongoDB](https://docs.microsoft.com/azure/cosmos-db/introduction?WT.mc_id=academic-28005-chrhar), which allows the Node.js MongoDB client to interact with it. Most recently, [Cosmos DB serverless](https://docs.microsoft.com/azure/cosmos-db/serverless?WT.mc_id=academic-28005-chrhar) was released, which similar to other serverless products charges are based on usage. Your team will create a Cosmos DB account and configure the application to use your new Cosmos DB deployment.
 
 ## Application notes
 
@@ -47,14 +47,14 @@ Have a mentor check your site to ensure everything has been completed!
 
 Your team might find these resources helpful:
 
-- [Create an Azure Cosmos DB account](https://docs.microsoft.com/azure/cosmos-db/create-cosmosdb-resources-portal#create-an-azure-cosmos-db-account)
-- [Get the MongoDB connection string by using the quick start](https://docs.microsoft.com/azure/cosmos-db/connect-mongodb-account#get-the-mongodb-connection-string-by-using-the-quick-start)
-- [Configure application settings for Azure Static Web Apps](https://docs.microsoft.com/azure/static-web-apps/application-settings)
-- [Troubleshooting deployment and runtime errors](https://docs.microsoft.com/azure/static-web-apps/troubleshooting)
+- [Create an Azure Cosmos DB account](https://docs.microsoft.com/azure/cosmos-db/create-cosmosdb-resources-portal#create-an-azure-cosmos-db-account?WT.mc_id=academic-28005-chrhar)
+- [Get the MongoDB connection string by using the quick start](https://docs.microsoft.com/azure/cosmos-db/connect-mongodb-account#get-the-mongodb-connection-string-by-using-the-quick-start?WT.mc_id=academic-28005-chrhar)
+- [Configure application settings for Azure Static Web Apps](https://docs.microsoft.com/azure/static-web-apps/application-settings?WT.mc_id=academic-28005-chrhar)
+- [Troubleshooting deployment and runtime errors](https://docs.microsoft.com/azure/static-web-apps/troubleshooting?WT.mc_id=academic-28005-chrhar)
 
 ## Tips
 
-- The application will automatically create a database and collection to store data; the only resource your team needs to [create is an Azure Cosmos DB account](https://docs.microsoft.com/azure/cosmos-db/create-cosmosdb-resources-portal#create-an-azure-cosmos-db-account)
+- The application will automatically create a database and collection to store data; the only resource your team needs to [create is an Azure Cosmos DB account](https://docs.microsoft.com/azure/cosmos-db/create-cosmosdb-resources-portal#create-an-azure-cosmos-db-accoun?WT.mc_id=academic-28005-chrhart)
 
 ## Final result
 
