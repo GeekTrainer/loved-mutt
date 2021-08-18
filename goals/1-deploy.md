@@ -35,9 +35,9 @@ To validate your team's work with the [automated tool](https://ashy-mushroom-060
 
 Your team might find these resources helpful:
 
-- [What is Azure Static Web Apps](https://docs.microsoft.com/azure/static-web-apps/overview)
-- [Quickstart: Create a static web app - Azure Portal](https://docs.microsoft.com/azure/static-web-apps/get-started-portal?tabs=vanilla-javascript#create-a-static-web-app)
-- [Quickstart: Building your first static site - Visual Studio Code](https://docs.microsoft.com/azure/static-web-apps/getting-started?tabs=vanilla-javascript#create-a-static-web-app)
+- [What is Azure Static Web Apps](https://docs.microsoft.com/azure/static-web-apps/overview?WT.mc_id=academic-28005-chrhar)
+- [Quickstart: Create a static web app - Azure Portal](https://docs.microsoft.com/azure/static-web-apps/get-started-portal?tabs=vanilla-javascript#create-a-static-web-app?WT.mc_id=academic-28005-chrhar)
+- [Quickstart: Building your first static site - Visual Studio Code](https://docs.microsoft.com/azure/static-web-apps/getting-started?tabs=vanilla-javascript#create-a-static-web-app?WT.mc_id=academic-28005-chrhar)
 
 ## Tips
 

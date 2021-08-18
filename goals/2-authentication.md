@@ -79,10 +79,10 @@ To validate your lab with the automated tool, enter the contents of *staticwebap
 
 Your team might find these resources helpful:
 
-- [Azure Static Web Apps - Login](https://docs.microsoft.com/azure/static-web-apps/authentication-authorization#login)
-- [Configure Azure Static Web Apps](https://docs.microsoft.com/azure/static-web-apps/configuration)
-- [Access user information in Azure Static Web Apps](https://docs.microsoft.com/azure/static-web-apps/user-information?tabs=javascript)
-- [Troubleshooting deployment and runtime errors](https://docs.microsoft.com/azure/static-web-apps/troubleshooting)
+- [Azure Static Web Apps - Login](https://docs.microsoft.com/azure/static-web-apps/authentication-authorization#login?WT.mc_id=academic-28005-chrhar)
+- [Configure Azure Static Web Apps](https://docs.microsoft.com/azure/static-web-apps/configuration?WT.mc_id=academic-28005-chrhar)
+- [Access user information in Azure Static Web Apps](https://docs.microsoft.com/azure/static-web-apps/user-information?tabs=javascript&WT.mc_id=academic-28005-chrhar)
+- [Troubleshooting deployment and runtime errors](https://docs.microsoft.com/azure/static-web-apps/troubleshooting?WT.mc_id=academic-28005-chrhar)
 
 ## Tips
 

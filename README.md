@@ -4,11 +4,11 @@ According to the American Society for the Prevention of Cruelty to Animals (ASPC
 
 Your team will aid a fictional adoption agency with deploying their website to the cloud. The application is designed to raise awareness of different dog breeds. A potential adopter can use the app to flip through pictures of various dogs and come up with potential names for each dog. This can be a great way to get a family excited about the possibility of adopting a new pet!
 
-The agency has already created the website using [Svelte](https://svelte.dev/) and [Svelte Kit](https://kit.svelte.dev/) for the front end, [Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview) and a [MongoDB API database](https://docs.mongodb.com/drivers/node/current/) for the back-end. They have provided documentation your team can review to gain an understanding of how it works, and run it locally for testing purposes.
+The agency has already created the website using [Svelte](https://svelte.dev/) and [Svelte Kit](https://kit.svelte.dev/) for the front end, [Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview?WT.mc_id=academic-28005-chrhar) and a [MongoDB API database](https://docs.mongodb.com/drivers/node/current/) for the back-end. They have provided documentation your team can review to gain an understanding of how it works, and run it locally for testing purposes.
 
 ## Prerequisites
 
-Each team member will need an Azure account. With [Azure for Students](https://aka.ms/a4s), you can access $100 in free credit, and a large suite of free services!
+Each team member will need an Azure account. With [Azure for Students](https://aka.ms/a4s?WT.mc_id=academic-28005-chrhar), you can access $100 in free credit, and a large suite of free services!
 
 Your team should be familiar with the following:
 
@@ -25,7 +25,7 @@ Each member of your team will also need the following software installed:
   - [Install git on Linux](https://git-scm.com/download/linux)
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [Node.js](https://nodejs.org/)
-  - [Install Node.js on Windows](https://docs.microsoft.com/windows/dev-environment/javascript/nodejs-on-windows)
+  - [Install Node.js on Windows](https://docs.microsoft.com/windows/dev-environment/javascript/nodejs-on-windows?WT.mc_id=academic-28005-chrhar)
   - [Install Node.js on Linux or MacOS](https://github.com/nvm-sh/nvm#installing-and-updating)
 - [Azure Functions Core Tools](https://www.npmjs.com/package/azure-functions-core-tools), which can be installed by running the following command (after Node.js and npm are installed)
 
@@ -74,5 +74,5 @@ This workshop is designed to be a goal-oriented self-exploration of Azure and re
 This project is designed as a potential seed for future development. If you were to continue with this idea, your team could potentially:
 
 - Use the [Petfinder API](https://www.petfinder.com/developers/) to create an application to match potential adopters with dogs
-- Use the [Bing Maps API](https://docs.microsoft.com/bingmaps/getting-started/) to search based on location
-- Use [Custom Vision](https://azure.microsoft.com/services/cognitive-services/custom-vision-service/) to identify dog breeds
+- Use the [Bing Maps API](https://docs.microsoft.com/bingmaps/getting-started/?WT.mc_id=academic-28005-chrhar) to search based on location
+- Use [Custom Vision](https://azure.microsoft.com/services/cognitive-services/custom-vision-service/?WT.mc_id=academic-28005-chrhar) to identify dog breeds
